@@ -16,6 +16,12 @@
         <module>springboot-client</module>
     </modules>
 
+    <repositories>
+        <repository>
+            <id>wujincheng2333-mvn-repo</id>
+            <url>https://raw.githubusercontent.com/wujincheng2333/mvn-repo/master</url>
+        </repository>
+    </repositories>
 
     <dependencies>
 
