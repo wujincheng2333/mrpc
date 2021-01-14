@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mrpc.iml" filepath="$PROJECT_DIR$/mrpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mrpc-client/mrpc-client.iml" filepath="$PROJECT_DIR$/mrpc-client/mrpc-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mrpc-common/mrpc-common.iml" filepath="$PROJECT_DIR$/mrpc-common/mrpc-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mrpc-server/mrpc-server.iml" filepath="$PROJECT_DIR$/mrpc-server/mrpc-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-client/springboot-client.iml" filepath="$PROJECT_DIR$/springboot-client/springboot-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-server/springboot-server.iml" filepath="$PROJECT_DIR$/springboot-server/springboot-server.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mrpc-client" />
+        <module name="mrpc-common" />
+        <module name="mrpc-server" />
+        <module name="mrpcserver" />
+        <module name="springboot-client" />
+        <module name="springboot-demo01" />
+        <module name="springboot-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mrpc" target="1.8" />
+      <module name="mrpc-client" target="1.8" />
+      <module name="mrpc-common" target="1.8" />
+      <module name="mrpc-server" target="1.8" />
+      <module name="mrpcserver" target="1.8" />
+      <module name="springboot-client" target="1.8" />
+      <module name="springboot-demo01" target="1.8" />
+      <module name="springboot-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
