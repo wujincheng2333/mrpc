@@ -1,0 +1,141 @@
+2021-01-15 15:10:22.391  INFO 18348 [           main] c.w.s.SpringbootClientApplication        [  50]   :Starting SpringbootClientApplication on LAPTOP-PU9IQQM6 with PID 18348 (D:\code2\project\code\mrpc\springboot-client\target\classes started by 25231 in D:\code2\project\code\mrpc)
+2021-01-15 15:10:22.396  INFO 18348 [           main] c.w.s.SpringbootClientApplication        [ 647]   :No active profile set, falling back to default profiles: default
+2021-01-15 15:10:23.458  INFO 18348 [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/springboot-client/target/classes/config.properties]
+2021-01-15 15:10:23.501  INFO 18348 [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-15 15:10:23.590  INFO 18348 [           main] trationDelegate$BeanPostProcessorChecker [ 330]   :Bean 'com.wujincheng.mrpccommon.config.MRPCAutoConfigure' of type [com.wujincheng.mrpccommon.config.MRPCAutoConfigure$$EnhancerBySpringCGLIB$$242f8f72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-15 15:10:25.832  INFO 18348 [       Thread-8] com.wujincheng.mrpccommon.init.MRPCInit  [ 753]   :监听[20802]...
+2021-01-15 15:10:25.838  INFO 18348 [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 617]   :注册成功:[{"ip":"192.168.2.171","port":"20802","serviceName":"springboot-mrpc-client01","time":1610694625832,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207"]}]
+2021-01-15 15:10:25.887 ERROR 18348 [      Thread-14] com.wujincheng.mrpccommon.init.MRPCInit  [ 758]   :服务器异常停止
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:132)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:551)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1345)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:503)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:488)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:984)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:247)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:355)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:416)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:515)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-01-15 15:12:29.663  INFO 21944 [           main] c.w.s.SpringbootClientApplication        [  50]   :Starting SpringbootClientApplication on LAPTOP-PU9IQQM6 with PID 21944 (D:\code2\project\code\mrpc\springboot-client\target\classes started by 25231 in D:\code2\project\code\mrpc)
+2021-01-15 15:12:29.668  INFO 21944 [           main] c.w.s.SpringbootClientApplication        [ 647]   :No active profile set, falling back to default profiles: default
+2021-01-15 15:12:30.575  INFO 21944 [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/springboot-client/target/classes/config.properties]
+2021-01-15 15:12:30.598  INFO 21944 [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-15 15:12:30.657  INFO 21944 [           main] trationDelegate$BeanPostProcessorChecker [ 330]   :Bean 'com.wujincheng.mrpccommon.config.MRPCAutoConfigure' of type [com.wujincheng.mrpccommon.config.MRPCAutoConfigure$$EnhancerBySpringCGLIB$$77b35a21] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-15 15:12:32.558  INFO 21944 [       Thread-6] com.wujincheng.mrpccommon.init.MRPCInit  [ 753]   :监听[20802]...
+2021-01-15 15:12:32.564  INFO 21944 [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 617]   :注册成功:[{"ip":"192.168.2.171","port":"20802","serviceName":"springboot-mrpc-client01","time":1610694752558,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207"]}]
+2021-01-15 15:12:32.604 ERROR 21944 [      Thread-12] com.wujincheng.mrpccommon.init.MRPCInit  [ 758]   :服务器异常停止
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:132)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:551)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1345)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:503)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:488)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:984)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:247)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:355)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:416)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:515)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-01-15 15:12:49.426  INFO 16140 [           main] c.w.s.SpringbootClientApplication        [  50]   :Starting SpringbootClientApplication on LAPTOP-PU9IQQM6 with PID 16140 (D:\code2\project\code\mrpc\springboot-client\target\classes started by 25231 in D:\code2\project\code\mrpc)
+2021-01-15 15:12:49.430  INFO 16140 [           main] c.w.s.SpringbootClientApplication        [ 647]   :No active profile set, falling back to default profiles: default
+2021-01-15 15:12:50.264  INFO 16140 [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/springboot-client/target/classes/config.properties]
+2021-01-15 15:12:50.285  INFO 16140 [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-15 15:12:50.333  INFO 16140 [           main] trationDelegate$BeanPostProcessorChecker [ 330]   :Bean 'com.wujincheng.mrpccommon.config.MRPCAutoConfigure' of type [com.wujincheng.mrpccommon.config.MRPCAutoConfigure$$EnhancerBySpringCGLIB$$78a4751c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-15 15:12:52.126  INFO 16140 [       Thread-7] com.wujincheng.mrpccommon.init.MRPCInit  [ 753]   :监听[20805]...
+2021-01-15 15:12:52.132  INFO 16140 [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 617]   :注册成功:[{"ip":"192.168.2.171","port":"20805","serviceName":"springboot-mrpc-client01","time":1610694772126,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207"]}]
+2021-01-15 15:12:52.172 ERROR 16140 [      Thread-12] com.wujincheng.mrpccommon.init.MRPCInit  [ 758]   :服务器异常停止
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:132)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:551)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1345)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:503)
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:488)
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:984)
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:247)
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:355)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:416)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:515)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:918)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-01-15 15:19:48.893  INFO 15788 [           main] c.w.s.SpringbootClientApplication        [  50]   :Starting SpringbootClientApplication on LAPTOP-PU9IQQM6 with PID 15788 (D:\code2\project\code\mrpc\springboot-client\target\classes started by 25231 in D:\code2\project\code\mrpc)
+2021-01-15 15:19:48.900  INFO 15788 [           main] c.w.s.SpringbootClientApplication        [ 647]   :No active profile set, falling back to default profiles: default
+2021-01-15 15:19:49.905  INFO 15788 [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/springboot-client/target/classes/config.properties]
+2021-01-15 15:19:49.941  INFO 15788 [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-15 15:19:50.008  INFO 15788 [           main] trationDelegate$BeanPostProcessorChecker [ 330]   :Bean 'com.wujincheng.mrpccommon.config.MRPCAutoConfigure' of type [com.wujincheng.mrpccommon.config.MRPCAutoConfigure$$EnhancerBySpringCGLIB$$dcdd0fb7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-15 15:19:50.307  INFO 15788 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [  90]   :Tomcat initialized with port(s): 8081 (http)
+2021-01-15 15:19:50.322  INFO 15788 [           main] o.a.coyote.http11.Http11NioProtocol      [ 173]   :Initializing ProtocolHandler ["http-nio-8081"]
+2021-01-15 15:19:50.332  INFO 15788 [           main] o.apache.catalina.core.StandardService   [ 173]   :Starting service [Tomcat]
+2021-01-15 15:19:50.332  INFO 15788 [           main] org.apache.catalina.core.StandardEngine  [ 173]   :Starting Servlet engine: [Apache Tomcat/9.0.22]
+2021-01-15 15:19:50.453  INFO 15788 [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [ 173]   :Initializing Spring embedded WebApplicationContext
+2021-01-15 15:19:50.454  INFO 15788 [           main] o.s.web.context.ContextLoader            [ 284]   :Root WebApplicationContext: initialization completed in 1490 ms
+2021-01-15 15:19:50.774  INFO 15788 [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  [ 171]   :Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 15:19:50.937  INFO 15788 [           main] o.a.coyote.http11.Http11NioProtocol      [ 173]   :Starting ProtocolHandler ["http-nio-8081"]
+2021-01-15 15:19:50.962  INFO 15788 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [ 202]   :Tomcat started on port(s): 8081 (http) with context path ''
+2021-01-15 15:19:50.966  INFO 15788 [           main] c.w.s.SpringbootClientApplication        [  59]   :Started SpringbootClientApplication in 2.678 seconds (JVM running for 4.366)
+2021-01-15 15:26:28.445  INFO 24320 [           main] c.w.s.SpringbootClientApplication        [  50]   :Starting SpringbootClientApplication on LAPTOP-PU9IQQM6 with PID 24320 (D:\code2\project\code\mrpc\springboot-client\target\classes started by 25231 in D:\code2\project\code\mrpc)
+2021-01-15 15:26:28.450  INFO 24320 [           main] c.w.s.SpringbootClientApplication        [ 647]   :No active profile set, falling back to default profiles: default
+2021-01-15 15:26:29.408  INFO 24320 [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/springboot-client/target/classes/config.properties]
+2021-01-15 15:26:29.429  INFO 24320 [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-15 15:26:29.494  INFO 24320 [           main] trationDelegate$BeanPostProcessorChecker [ 330]   :Bean 'com.wujincheng.mrpccommon.config.MRPCAutoConfigure' of type [com.wujincheng.mrpccommon.config.MRPCAutoConfigure$$EnhancerBySpringCGLIB$$537e7a46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-01-15 15:26:29.766  INFO 24320 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [  90]   :Tomcat initialized with port(s): 8081 (http)
+2021-01-15 15:26:29.785  INFO 24320 [           main] o.a.coyote.http11.Http11NioProtocol      [ 173]   :Initializing ProtocolHandler ["http-nio-8081"]
+2021-01-15 15:26:29.796  INFO 24320 [           main] o.apache.catalina.core.StandardService   [ 173]   :Starting service [Tomcat]
+2021-01-15 15:26:29.797  INFO 24320 [           main] org.apache.catalina.core.StandardEngine  [ 173]   :Starting Servlet engine: [Apache Tomcat/9.0.22]
+2021-01-15 15:26:29.906  INFO 24320 [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       [ 173]   :Initializing Spring embedded WebApplicationContext
+2021-01-15 15:26:29.906  INFO 24320 [           main] o.s.web.context.ContextLoader            [ 284]   :Root WebApplicationContext: initialization completed in 1391 ms
+2021-01-15 15:26:30.198  INFO 24320 [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  [ 171]   :Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-15 15:26:30.375  INFO 24320 [           main] o.a.coyote.http11.Http11NioProtocol      [ 173]   :Starting ProtocolHandler ["http-nio-8081"]
+2021-01-15 15:26:30.401  INFO 24320 [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  [ 202]   :Tomcat started on port(s): 8081 (http) with context path ''
+2021-01-15 15:26:30.404  INFO 24320 [           main] c.w.s.SpringbootClientApplication        [  59]   :Started SpringbootClientApplication in 2.502 seconds (JVM running for 4.082)
+2021-01-15 15:26:32.304  INFO 24320 [      Thread-12] com.wujincheng.mrpccommon.init.MRPCInit  [ 753]   :监听[20802]...
+2021-01-15 15:26:32.524  INFO 24320 [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 617]   :注册成功:[{"ip":"192.168.2.171","port":"20802","serviceName":"springboot-mrpc-client01","time":1610695592305,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207"]}]
+2021-01-15 15:28:45.328  INFO   [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/mrpc-server/target/classes/config.properties]
+2021-01-15 15:28:45.385  INFO   [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-15 15:28:48.938  INFO   [       Thread-1] com.wujincheng.mrpccommon.init.MRPCInit  [ 753]   :监听[20802]...
+2021-01-15 15:28:48.946  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 617]   :注册成功:[{"ip":"192.168.2.171","port":"20802","serviceName":"mrpc-server01","time":1610695728938,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207","com.wujincheng.mrpccommon.service.DemoService"]}]
+2021-01-15 15:28:56.708  INFO   [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/mrpc-client/target/classes/config.properties]
+2021-01-15 15:28:56.758  INFO   [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-15 15:28:56.932  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 712]   :新增服务:[RegisterVO{ip='192.168.2.171', port='20802', serviceName='mrpc-server01', time=1610695728938, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207,com.wujincheng.mrpccommon.service.DemoService}]
+2021-01-15 15:29:00.332  INFO   [       Thread-1] com.wujincheng.mrpccommon.init.MRPCInit  [ 753]   :监听[20801]...
+2021-01-15 15:29:00.340  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 617]   :注册成功:[{"ip":"192.168.2.171","port":"20801","serviceName":"mrpc-client01","time":1610695740333,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207"]}]
+2021-01-15 15:29:00.474  INFO   [lientWorker-4-1] c.w.mrpccommon.init.SocketClientHandler  [  59]   :连接成功：[192.168.2.171:20802]
+2021-01-15 15:29:00.784  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-15 15:29:02.810  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-15 15:29:04.814  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-15 15:29:05.538  INFO   [  mrpc-register] com.wujincheng.mrpccommon.init.MRPCInit  [ 712]   :新增服务:[RegisterVO{ip='192.168.2.171', port='20801', serviceName='mrpc-client01', time=1610695740333, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207}]
+2021-01-15 15:29:06.817  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-15 15:29:08.820  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-15 15:29:10.822  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-15 15:29:12.826  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-15 15:29:14.829  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
