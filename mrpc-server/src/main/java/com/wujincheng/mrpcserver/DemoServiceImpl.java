@@ -12,4 +12,9 @@ public class DemoServiceImpl implements DemoService {
     public void sayHello(String msg) {
         logger.info(msg);
     }
+
+    @Override
+    public String echo(String str) {
+        return str;
+    }
 }

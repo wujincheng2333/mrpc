@@ -12,4 +12,8 @@ public class DemoServiceNative {
     public void sayHello(String msg){
         demoService.sayHello(msg);
     }
+
+    public String echo(String str){
+        return demoService.echo(str);
+    }
 }
