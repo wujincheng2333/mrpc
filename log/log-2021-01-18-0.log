@@ -1,0 +1,12 @@
+2021-01-18 10:39:32.424  INFO   [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/mrpc-server/target/classes/config.properties]
+2021-01-18 10:39:32.469  INFO   [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-18 10:39:36.050  INFO   [       Thread-1] com.wujincheng.mrpccommon.init.MRPCInit  [ 756]   :监听[20803]...
+2021-01-18 10:39:36.060  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 620]   :注册成功:[{"ip":"127.0.0.1","port":"20803","serviceName":"mrpc-server01","time":1610937576050,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207","com.wujincheng.mrpccommon.service.DemoService"]}]
+2021-01-18 10:39:41.026  INFO   [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/mrpc-client/target/classes/config.properties]
+2021-01-18 10:39:41.070  INFO   [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-18 10:39:41.178  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 715]   :新增服务:[RegisterVO{ip='127.0.0.1', port='20803', serviceName='mrpc-server01', time=1610937576050, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207,com.wujincheng.mrpccommon.service.DemoService}]
+2021-01-18 10:39:44.390  INFO   [       Thread-1] com.wujincheng.mrpccommon.init.MRPCInit  [ 756]   :监听[20801]...
+2021-01-18 10:39:44.399  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 620]   :注册成功:[{"ip":"127.0.0.1","port":"20801","serviceName":"mrpc-client01","time":1610937584391,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207"]}]
+2021-01-18 10:39:44.449  INFO   [lientWorker-4-1] c.w.mrpccommon.init.SocketClientHandler  [  59]   :连接成功：[127.0.0.1:20803]
+2021-01-18 10:39:52.620  INFO   [  mrpc-register] com.wujincheng.mrpccommon.init.MRPCInit  [ 715]   :新增服务:[RegisterVO{ip='127.0.0.1', port='20801', serviceName='mrpc-client01', time=1610937584391, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207}]
+2021-01-18 10:40:05.005  INFO   [lientWorker-4-1] c.w.mrpccommon.init.SocketClientHandler  [  73]   :关闭连接:[127.0.0.1:20803]

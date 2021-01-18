@@ -1,0 +1,105 @@
+2021-01-17 16:44:44.312  INFO   [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/mrpc-server/target/classes/config.properties]
+2021-01-17 16:44:44.362  INFO   [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-17 16:44:47.704  INFO   [       Thread-1] com.wujincheng.mrpccommon.init.MRPCInit  [ 756]   :监听[20803]...
+2021-01-17 16:44:47.712  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 620]   :注册成功:[{"ip":"127.0.0.1","port":"20803","serviceName":"mrpc-server01","time":1610873087705,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207","com.wujincheng.mrpccommon.service.DemoService"]}]
+2021-01-17 16:44:56.208  INFO   [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/mrpc-client/target/classes/config.properties]
+2021-01-17 16:44:56.252  INFO   [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-17 16:44:56.367  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 715]   :新增服务:[RegisterVO{ip='127.0.0.1', port='20803', serviceName='mrpc-server01', time=1610873087705, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207,com.wujincheng.mrpccommon.service.DemoService}]
+2021-01-17 16:44:59.621  INFO   [       Thread-1] com.wujincheng.mrpccommon.init.MRPCInit  [ 756]   :监听[20801]...
+2021-01-17 16:44:59.629  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 620]   :注册成功:[{"ip":"127.0.0.1","port":"20801","serviceName":"mrpc-client01","time":1610873099621,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207"]}]
+2021-01-17 16:44:59.676  INFO   [lientWorker-4-1] c.w.mrpccommon.init.SocketClientHandler  [  59]   :连接成功：[127.0.0.1:20803]
+2021-01-17 16:44:59.942  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-17 16:45:04.497  INFO   [  mrpc-register] com.wujincheng.mrpccommon.init.MRPCInit  [ 715]   :新增服务:[RegisterVO{ip='127.0.0.1', port='20801', serviceName='mrpc-client01', time=1610873099621, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207}]
+2021-01-17 16:45:05.467  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :1-->提交任务完成
+2021-01-17 16:45:05.476  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :1-->耗时：[5502] ms
+2021-01-17 16:45:08.917  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :2-->提交任务完成
+2021-01-17 16:45:08.925  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :2-->耗时：[3349] ms
+2021-01-17 16:45:12.249  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :3-->提交任务完成
+2021-01-17 16:45:12.255  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :3-->耗时：[3230] ms
+2021-01-17 16:45:15.631  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :4-->提交任务完成
+2021-01-17 16:45:15.641  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :4-->耗时：[3281] ms
+2021-01-17 16:45:18.907  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :5-->提交任务完成
+2021-01-17 16:45:18.917  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :5-->耗时：[3176] ms
+2021-01-17 16:45:22.239  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :6-->提交任务完成
+2021-01-17 16:45:22.249  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :6-->耗时：[3232] ms
+2021-01-17 16:45:25.675  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :7-->提交任务完成
+2021-01-17 16:45:25.685  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :7-->耗时：[3336] ms
+2021-01-17 16:45:29.132  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :8-->提交任务完成
+2021-01-17 16:45:29.143  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :8-->耗时：[3357] ms
+2021-01-17 16:45:32.917  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :9-->提交任务完成
+2021-01-17 16:45:32.925  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :9-->耗时：[3680] ms
+2021-01-17 16:45:36.171  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :10-->提交任务完成
+2021-01-17 16:45:36.180  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :10-->耗时：[3154] ms
+2021-01-17 16:45:49.356  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :11-->提交任务完成
+2021-01-17 16:45:49.367  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :11-->耗时：[3187] ms
+2021-01-17 16:45:52.820  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :12-->提交任务完成
+2021-01-17 16:45:52.832  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :12-->耗时：[3364] ms
+2021-01-17 16:45:56.584  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :13-->提交任务完成
+2021-01-17 16:45:56.595  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :13-->耗时：[3663] ms
+2021-01-17 16:46:00.398  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :14-->提交任务完成
+2021-01-17 16:46:00.405  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :14-->耗时：[3710] ms
+2021-01-17 16:46:04.158  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :15-->提交任务完成
+2021-01-17 16:46:04.164  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :15-->耗时：[3658] ms
+2021-01-17 16:46:07.500  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :16-->提交任务完成
+2021-01-17 16:46:07.509  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :16-->耗时：[3243] ms
+2021-01-17 16:46:11.008  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :17-->提交任务完成
+2021-01-17 16:46:11.016  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :17-->耗时：[3406] ms
+2021-01-17 16:46:14.672  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :18-->提交任务完成
+2021-01-17 16:46:14.685  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :18-->耗时：[3568] ms
+2021-01-17 16:46:18.901  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :19-->提交任务完成
+2021-01-17 16:46:18.907  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :19-->耗时：[4122] ms
+2021-01-17 16:46:23.227  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :20-->提交任务完成
+2021-01-17 16:46:23.239  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :20-->耗时：[4232] ms
+2021-01-17 16:46:36.516  INFO   [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/mrpc-server/target/classes/config.properties]
+2021-01-17 16:46:36.557  INFO   [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-17 16:46:39.905  INFO   [       Thread-1] com.wujincheng.mrpccommon.init.MRPCInit  [ 756]   :监听[20803]...
+2021-01-17 16:46:39.914  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 620]   :注册成功:[{"ip":"127.0.0.1","port":"20803","serviceName":"mrpc-server01","time":1610873199906,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207","com.wujincheng.mrpccommon.service.DemoService"]}]
+2021-01-17 16:46:42.240  INFO   [           main] com.wujincheng.mrpccommon.config.Config  [  29]   :path:[/D:/code2/project/code/mrpc/mrpc-client/target/classes/config.properties]
+2021-01-17 16:46:42.290  INFO   [           main] c.w.mrpccommon.config.RedisClient        [  25]   :jedis 初始化完成
+2021-01-17 16:46:42.410  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 715]   :新增服务:[RegisterVO{ip='127.0.0.1', port='20803', serviceName='mrpc-server01', time=1610873199906, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207,com.wujincheng.mrpccommon.service.DemoService}]
+2021-01-17 16:46:46.062  INFO   [       Thread-1] com.wujincheng.mrpccommon.init.MRPCInit  [ 756]   :监听[20801]...
+2021-01-17 16:46:46.070  INFO   [           main] com.wujincheng.mrpccommon.init.MRPCInit  [ 620]   :注册成功:[{"ip":"127.0.0.1","port":"20801","serviceName":"mrpc-client01","time":1610873206063,"interfaces":["com.wujincheng.mrpccommon.service.MyNettyCommonService1207"]}]
+2021-01-17 16:46:46.116  INFO   [lientWorker-4-1] c.w.mrpccommon.init.SocketClientHandler  [  59]   :连接成功：[127.0.0.1:20803]
+2021-01-17 16:46:46.398  INFO   [      mrpc-work] c.wujincheng.mrpcserver.DemoServiceImpl  [  13]   :mrpc-client01
+2021-01-17 16:46:46.678  INFO   [  mrpc-register] com.wujincheng.mrpccommon.init.MRPCInit  [ 715]   :新增服务:[RegisterVO{ip='127.0.0.1', port='20801', serviceName='mrpc-client01', time=1610873206063, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207}]
+2021-01-17 16:46:51.443  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :1-->提交任务完成
+2021-01-17 16:46:51.455  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :1-->耗时：[5029] ms
+2021-01-17 16:46:54.418  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :2-->提交任务完成
+2021-01-17 16:46:54.427  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :2-->耗时：[2871] ms
+2021-01-17 16:46:57.355  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :3-->提交任务完成
+2021-01-17 16:46:57.363  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :3-->耗时：[2835] ms
+2021-01-17 16:47:00.098  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :4-->提交任务完成
+2021-01-17 16:47:00.106  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :4-->耗时：[2642] ms
+2021-01-17 16:47:02.828  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :5-->提交任务完成
+2021-01-17 16:47:02.836  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :5-->耗时：[2629] ms
+2021-01-17 16:47:05.471  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :6-->提交任务完成
+2021-01-17 16:47:05.478  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :6-->耗时：[2540] ms
+2021-01-17 16:47:08.201  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :7-->提交任务完成
+2021-01-17 16:47:08.209  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :7-->耗时：[2629] ms
+2021-01-17 16:47:10.843  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :8-->提交任务完成
+2021-01-17 16:47:10.850  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :8-->耗时：[2541] ms
+2021-01-17 16:47:13.523  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :9-->提交任务完成
+2021-01-17 16:47:13.531  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :9-->耗时：[2580] ms
+2021-01-17 16:47:16.166  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :10-->提交任务完成
+2021-01-17 16:47:16.176  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :10-->耗时：[2545] ms
+2021-01-17 16:47:28.713  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :11-->提交任务完成
+2021-01-17 16:47:28.721  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :11-->耗时：[2545] ms
+2021-01-17 16:47:31.340  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :12-->提交任务完成
+2021-01-17 16:47:31.347  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :12-->耗时：[2526] ms
+2021-01-17 16:47:33.960  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :13-->提交任务完成
+2021-01-17 16:47:33.968  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :13-->耗时：[2520] ms
+2021-01-17 16:47:36.554  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :14-->提交任务完成
+2021-01-17 16:47:36.561  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :14-->耗时：[2492] ms
+2021-01-17 16:47:39.166  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :15-->提交任务完成
+2021-01-17 16:47:39.173  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :15-->耗时：[2510] ms
+2021-01-17 16:47:41.923  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :16-->提交任务完成
+2021-01-17 16:47:41.932  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :16-->耗时：[2659] ms
+2021-01-17 16:47:44.668  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :17-->提交任务完成
+2021-01-17 16:47:44.675  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :17-->耗时：[2643] ms
+2021-01-17 16:47:47.230  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :18-->提交任务完成
+2021-01-17 16:47:47.236  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :18-->耗时：[2460] ms
+2021-01-17 16:47:49.779  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :19-->提交任务完成
+2021-01-17 16:47:49.787  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :19-->耗时：[2450] ms
+2021-01-17 16:47:52.328  INFO   [           main] com.wujincheng.mrpcclient.Client         [  76]   :20-->提交任务完成
+2021-01-17 16:47:52.337  INFO   [           main] com.wujincheng.mrpcclient.Client         [  78]   :20-->耗时：[2450] ms
+2021-01-17 16:48:06.725  INFO   [  mrpc-register] com.wujincheng.mrpccommon.init.MRPCInit  [ 710]   :移除服务:[RegisterVO{ip='127.0.0.1', port='20801', serviceName='mrpc-client01', time=1610873266095, interfaces=com.wujincheng.mrpccommon.service.MyNettyCommonService1207}]
