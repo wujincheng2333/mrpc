@@ -31,60 +31,63 @@ public class Client {
         DemoServiceNative demoServiceNative=(DemoServiceNative) CacheData.interfaceServiceInstance.get(DemoServiceNative.class.getName());
 
         final String msg=getRandomString(1024);
-        RpcContext.setValue("test","test123");
-        System.out.println(msg);
-        System.out.println(demoServiceNative.echo(msg));
-        new CountDownLatch(1).await();
+//        RpcContext.setValue("test","test123");
+//        System.out.println(msg);
+//        RpcContext.setValue(Common.SIMPLE_CLIENT,"true");
+//        System.out.println(demoServiceNative.echo(msg));
+//        new CountDownLatch(1).await();
 
-//        for(;;){
-//            try {
-//                demoServiceNative.sayHello("mrpc-client01");
-//                init=true;
-//                int size=100000;
-//
-//                for(int j=1;j<=20;j++){
-//                    final CountDownLatch countDownLatch=new CountDownLatch(size);
-//                    final Semaphore semaphore=new Semaphore(300,false);
-//                    long startTime=System.currentTimeMillis();
-//                    for(int i=0;i<size;i++){
-//                        semaphore.acquire();
-//                        try {
-//                            executor.submit(new Runnable() {
-//                                @Override
-//                                public void run() {
-//                                    try {
-//                                        RpcContext.setValue("test","test123");
-//                                        demoServiceNative.echo(msg);
-//                                    }catch (Exception e){
-//                                        logger.error(e.getMessage(),e);
-//                                    }finally {
-//                                        semaphore.release();
-//                                        countDownLatch.countDown();
-//                                    }
-//                                }
-//                            });
-//                        }catch (Exception e){
-//                            logger.error(e.getMessage(),e);
-//                        }
-//                    }
-//                    logger.info(j+"-->提交任务完成");
-//                    countDownLatch.await();
-//                    logger.info(j+"-->耗时：[{}] ms",System.currentTimeMillis()-startTime);
-//                    if(j==10){
-//                        Thread.sleep(10000);
-//                    }else{
-//                        Thread.sleep(100);
-//                    }
-//
-//                }
-//            }catch (Exception e){
-//                e.printStackTrace();
-//            }
-//            if(init){
-//                break;
-//            }
-//            Thread.sleep(2000);
-//        }
+        for(;;){
+            try {
+                demoServiceNative.sayHello("mrpc-client01");
+                init=true;
+                int size=100000;
+
+                for(int j=1;j<=20;j++){
+                    final CountDownLatch countDownLatch=new CountDownLatch(size);
+                    final Semaphore semaphore=new Semaphore(300,false);
+                    long startTime=System.currentTimeMillis();
+                    for(int i=0;i<size;i++){
+                        semaphore.acquire();
+                        try {
+                            executor.submit(new Runnable() {
+                                @Override
+                                public void run() {
+                                    try {
+                                        RpcContext.setValue("test","test123");
+                                        //RpcContext.setValue(Common.SIMPLE_CLIENT,true);
+                                        demoServiceNative.echo(msg);
+                                    }catch (Exception e){
+                                        logger.error(e.getMessage(),e);
+                                    }finally {
+                                        semaphore.release();
+                                        countDownLatch.countDown();
+                                    }
+                                }
+                            });
+                        }catch (Exception e){
+                            logger.error(e.getMessage(),e);
+                        }
+                    }
+                    logger.info(j+"-->提交任务完成");
+                    countDownLatch.await();
+                    logger.info(j+"-->耗时：[{}] ms",System.currentTimeMillis()-startTime);
+                    if(j==10){
+                        Thread.sleep(10000);
+                    }else{
+                        Thread.sleep(100);
+                    }
+
+                }
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            if(init){
+                break;
+            }
+            Thread.sleep(2000);
+        }
+        new CountDownLatch(1).await();
     }
 
     private static String getRandomString(int length){
